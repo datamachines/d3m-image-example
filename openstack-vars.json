@@ -1,0 +1,8 @@
+{
+  "new_image_name": "Test Packer Image",
+  "source_image_id": "c8f9e48f-e988-4906-969c-92034e868c09",
+  "vm_username": "ubuntu",
+  "vm_flavor_id": "6c0e06ed-bd79-4994-929f-bd601a394e77",
+  "vm_network_id": "77123f6e-5cbd-4d6a-bdd0-1c9171562186",
+  "floating_ip_pool_name": "floating_net"
+}

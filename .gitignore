@@ -1,0 +1,5 @@
+*.swp
+*openrc*.sh
+**/packer
+.vagrant
+*.log

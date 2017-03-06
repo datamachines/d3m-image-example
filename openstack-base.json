@@ -1,0 +1,23 @@
+{
+    "provisioners": [
+        {
+            "type": "shell",
+            "script": "./pre-ansible.sh"
+        },
+
+    ],
+
+    "builders": [
+        {
+            "type": "openstack",
+            "image_name": "{{user `new_image_name`}}", 
+            "ssh_username": "{{user `vm_username`}}",
+            "source_image": "{{user `source_image_id`}}",
+            "flavor": "{{user `vm_flavor_id`}}",
+            "networks": "{{user `vm_network_id`}}",
+            "floating_ip_pool": "{{user `floating_ip_pool_name`}}",
+            "insecure": "true"
+        }
+    ]
+}
+
